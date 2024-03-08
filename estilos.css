@@ -1,0 +1,211 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    margin: 0;
+  }
+
+  h1 {
+    padding:0;
+    margin:0;
+   }
+
+.Contenedor-Inicio{
+    height: 460px; 
+    width: 100%;
+    background-image: url("Imagenes/FondoInicio.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll; 
+    background-attachment: fixed;
+    margin-bottom: 0;
+}   
+ 
+
+.Titulos-Inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto ;
+    padding: 0 80px;
+    height: 100%;
+    flex-direction: column;
+}
+.Titulos-Inicio h1 {
+    color: darkgoldenrod;
+    font-size: 22px;
+    padding: 160px;
+     
+    line-height: 42px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Contenedor-categorias{
+    height: 660px; 
+    width: 100%;
+    background-image: url("Imagenes/FondoCategorias.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    background-attachment: scroll; 
+    background-attachment: fixed;
+    
+}
+.Contenedor-categorias h1 {
+    color: darkgoldenrod;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-self: center;
+    text-align: center;
+    padding: 34px;
+    font-weight: 800;
+}
+.Categorias{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between; 
+    margin: 0 auto ;
+    flex-wrap: wrap;  
+    width: 50%; 
+    height: 270px;
+}
+ 
+.CategoriaTipo{
+    width: 29%;
+    height: 100%;
+    background-color: thistle;
+    align-self: center;
+    margin: 6px;
+    flex-grow: 2; 
+    display: flex;
+    flex-direction: column;
+}
+.CategoriaTipo span {
+    color: darkgoldenrod;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-self: center;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.imgCategoria {
+    width: 100%;
+    height: 91%;
+     
+}
+.imgCategoria img{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedorPaginaCategoria{
+    display: flex;
+    align-items: center;
+     
+}  
+.filasCategoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid;
+    padding: 6px;  
+    font-size: 14px;
+}  
+ 
+.contenedorJuegos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+     
+}  
+.Juegos-Categoria{
+    width: 60%; 
+    height: 40%;    
+}
+.Juego{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:12px; 
+    border: 2px solid;
+    height: 40%;
+}
+.Juego span {
+    display: flex;  
+    padding: 12px;  
+    font-size: 16px;
+}
+
+.Contenido-Juego{
+    display: flex;   
+}
+.Contenido-Juego img{
+     
+    max-height: 200px; 
+    width: 300px; ;
+}
+
+.textoJuegos{
+    padding: 12px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(181, 193, 108)
+}
+.topPagJuego{
+    border-bottom: 1px solid; 
+    padding: 20px;
+}
+.contenedorPagJuego{
+    display: flex;  
+    flex-direction: column; 
+    align-items: center ;
+    margin-top: 20px;
+}
+
+.ImgJuego{
+    width: 70%; 
+    height: 400px; 
+}
+
+.textoPagJuego{
+    display: flex;  
+    flex-direction: column; 
+    align-items: center ;
+    width: 100%; 
+}
+
+.tituloJuego{
+    width: 70%; 
+    border: 1px solid; 
+    padding: 40px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 41px;
+    color: rgb(181, 193, 108);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.precioPagJuego{
+    display: flex;  
+    justify-content: space-around;
+    align-items: center ;
+    width: 40%;
+}
+
+.precioPagJuego :last-child{
+    border: 1px solid; 
+    padding: 20px;
+    text-align: center;
+    width: 40%; 
+}
