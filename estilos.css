@@ -84,6 +84,10 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+.CategoriaTipo a{
+    text-decoration: none;
+}
 .CategoriaTipo span {
     color: darkgoldenrod;
     font-size: 22px;
