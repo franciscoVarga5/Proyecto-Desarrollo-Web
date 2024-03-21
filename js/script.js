@@ -6,8 +6,7 @@ const confirmContraseña = document.getElementById('repetirContraseña');
 const fecha = document.getElementById('Fecha'); 
 const mailFormato = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 const contraseñaFormato = /(?=(.*[0-9]))(?=(.*[A-Z]))(?=(.*[a-z]))/;  
-myForm.addEventListener('submit', (event) => {
-  
+myForm.addEventListener('submit', (event) => { 
     event.preventDefault(); 
     let mensajeExito = ""
     const currentDate = new Date()
@@ -70,7 +69,7 @@ myForm.addEventListener('submit', (event) => {
             nombre.parentNode.classList.add('error');
             nombre.parentNode.classList.remove('success');
         } else if (currentDate.getFullYear() - nuevaFecha.getFullYear() < 13) { 
-            alert("Debe tener mas de 13") 
+            alert("Debe tener mas de 13 años para ingresar") 
             nombre.parentNode.classList.add('success');
             nombre.parentNode.classList.remove('error');
           }  
