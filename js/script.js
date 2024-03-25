@@ -78,8 +78,24 @@ myForm.addEventListener('submit', (event) => {
           nombre.parentNode.classList.add('success');
           nombre.parentNode.classList.remove('error');
         }  
+                //Validacion de Inicio de Sesion
+        fetch('', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ email: email, password: password })
+      })
+      .then(response => {
+          if (response.ok) {
+              window.location.href = '';
+          } else {
+              alert('Error: Usuario o contraseña incorrectos.');
+          }
+      })
+      .catch(error => {
+          console.error('Error al iniciar sesión:', error);
+          alert('Error al iniciar sesión. Por favor, inténtalo de nuevo más tarde.');
+      });
 
-})    
-
-
-  
+})     
