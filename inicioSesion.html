@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+</head>
+<body>
+    <h2>Iniciar Sesion</h2>
+    <form id="loginForm">
+        <div>
+            <label for="email">Correo Electronico:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div>
+            <label for="password">Contrasena:</label>
+            <input type="password" id="password" required>
+        </div>
+        <button type="submit">Iniciar Sesion</button>
+    </form>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            setTimeout(function() {
+                if (email === 'usuario@example.com' && password === 'contrasena') {
+                    alert('Inicio de sesion exitoso');
+                } else {
+                    alert('Error: Usuario o contrasena incorrectos.');
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
